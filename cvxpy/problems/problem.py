@@ -623,7 +623,7 @@ class Problem(u.Canonical):
         cls.REGISTERED_SOLVE_METHODS[name] = func
 
     def get_problem_data(
-        self, solver,
+        self, solver: str | None = None,
         gp: bool = False,
         enforce_dpp: bool = False,
         ignore_dpp: bool = False,
